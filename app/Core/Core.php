@@ -1,0 +1,25 @@
+<?php
+
+class Core{
+    public function start($urlGet){
+        // Função no Controller
+        $acao = 'index';
+        
+        // Se existir 'pagina' na URL, aparece a requisição do GET
+        if(isset($urlGet['pagina'])){
+            // Chamar o controller que a página está chamando
+            $controller = ucfirst($urlGet['pagina'].'Controller');
+        } else {
+            // Se não o padrão vai ser 'Home'
+            $controller = 'HomeController';
+        }
+        
+        // Se der erro, exibe a página de erro
+        if(!class_exists($controller)){
+            $controller = 'ErroController';
+        }
+        
+        // Exibir o conteudo da HomeController
+        call_user_func_array(array(new $controller, $acao), array());
+    }
+}
