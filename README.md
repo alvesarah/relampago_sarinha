@@ -7,5 +7,74 @@
 	🚧 Relâmpago Sarinha 🌸🚗 Em andamento 🚀 🚧
 </h4>
 
+
+## 💻 Sobre o Projeto
+Desenvolver uma <strong>API JSON RESTful</strong> em <strong>PHP</strong>, que utilize todos os métodos (GET, POST, PUT, DELETE).
+
+---
+
+## ⚙️ Funcionalidades
+
+### Site Institucional
+- [x] Os usuários tem acesso ao site por meio do computador ou celular, onde podem:
+    - [x] acessar todos os veículos.
+    - [x] detalhes de um veículo.
+    - [x] busca de veiculos.
+    - [x] inserção de um novo veículo.
+    - [x] edição de veículos.
+
+---
+
+## 🎨 Layout
+
+O layout da aplicação está disponível no Figma:
+
+<a href="">
+  <img alt="Made by alvesarah" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
+</a>
+
+### Mobile
+<!-- PRINT dO SITE NO CELULAR -->
+<p align="center"></p>
+  <img alt="" title="#" src="./src/assets/" width="200px">
+
+  <img alt="" title="#" src="./src/assets/" width="200px">
+</p>
+
+### Web
+<!-- PRINT dO SITE NO COMPUTADOR -->
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="" title="" src="./src/assets/" width="400px">
+
+  <img alt="" title="" src="./src/assets/" width="400px">
+</p>
+
+---
+## 🚀 Como executar o projeto
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+#### 🧭 Rodando a aplicação web (Frontend)
+
+```bash
+
+# Clone este repositório
+$ git clone https://github.com/alvesarah/relampago_sarinha.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd relampago-sarinha
+
+# Abrir projeto no vscode
+$ code .
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+
+```
+
+---
 # relampago_sarinha
 API Rest em PHP que consiste em fazer buscas, inserções, deleções e alterações com formato MVC.
