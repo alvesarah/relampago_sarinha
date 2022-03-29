@@ -57,10 +57,8 @@ O layout da aplicação está disponível no Figma:
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
-* Xampp
-* phpMyAdmin
-* Composer
-* Twig
+* [Xampp](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/5.6.30/xampp-win32-5.6.30-1-VC11-installer.exe/download)
+* [phpMyAdmin](https://www.phpmyadmin.net/)
 
 ### Pacotes utilizados
 * [Composer](https://www.hostinger.com.br/tutoriais/como-instalar-e-usar-o-composer/)
