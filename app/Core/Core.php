@@ -2,9 +2,14 @@
 
 class Core{
     public function start($urlGet){
-        // Função no Controller
-        $acao = 'index';
         
+        // Função no Controller
+        if(isset($urlGet['metodo'])){
+            $acao= $urlGet['metodo'];
+        }else{
+            $acao = 'index';
+        }
+
         // Se existir 'pagina' na URL, aparece a requisição do GET
         if(isset($urlGet['pagina'])){
             // Chamar o controller que a página está chamando
