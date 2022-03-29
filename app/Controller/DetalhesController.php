@@ -16,6 +16,7 @@ class DetalhesController{
             $parametros['descricao'] = $detalhes->descricao;
             $parametros['vendido'] = $detalhes->vendido;
             $parametros['created'] = $detalhes->created;
+            $parametros['updated'] = $detalhes->updated;
 
             $conteudo = $template->render($parametros);
             echo $conteudo;
