@@ -100,7 +100,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### **Utilitários**
 
--   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Hades | Barber Lounge)](https://www.figma.com/file/D41nbP0LDvkQfpi2z7JcjL/Hades-%7C-Barber-Lounge?node-id=1%3A2)**
+-   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Relâmpago Sarinha)]()**
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
 -   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
 -   Teste de API:  **[Insomnia](https://insomnia.rest/)**
