@@ -19,7 +19,7 @@ Desenvolver uma <strong>API JSON RESTful</strong> em <strong>PHP</strong>, que u
 - [x] Os usuários tem acesso ao site por meio do computador ou celular, onde podem:
     - [x] acessar todos os veículos.
     - [x] detalhes de um veículo.
-    - [x] busca de veiculos.
+    - [x] busca de veículos.
     - [x] inserção de um novo veículo.
     - [x] edição de veículos.
 
@@ -57,12 +57,20 @@ O layout da aplicação está disponível no Figma:
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+* Xampp
+* phpMyAdmin
+* Composer
+* Twig
+
+### Pacotes utilizados
+* [Composer](https://www.hostinger.com.br/tutoriais/como-instalar-e-usar-o-composer/)
+* [Twig](https://packagist.org/packages/twig/twig)
 
 #### 🧭 Rodando a aplicação web (Frontend)
 
 ```bash
 
-# Clone este repositório
+# Clone este repositório e coloque na pasta htdocs do Xampp
 $ git clone https://github.com/alvesarah/relampago_sarinha.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
@@ -71,7 +79,10 @@ $ cd relampago-sarinha
 # Abrir projeto no vscode
 $ code .
 
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+# Abrir o create-and-populate e seguir as instruções
+$ ./create-and-populate.php
+
+# A aplicação será aberta na porta:3306 - acesse http://localhost/relampago-sarinha
 
 ```
 
