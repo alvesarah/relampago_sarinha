@@ -4,7 +4,7 @@
 <h1 align="center">Relâmpago Sarinha</h1>
 
 <h4 align="center"> 
-	🚧 Relâmpago Sarinha 🌸🚗 Em andamento 🚀 🚧
+	🚧 Relâmpago Sarinha 🌸🚗 Concluído 🚀 🚧
 </h4>
 
 
