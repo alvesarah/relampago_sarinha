@@ -22,6 +22,7 @@ Desenvolver uma <strong>API JSON RESTful</strong> em <strong>PHP</strong>, que u
     - [x] busca de veículos.
     - [x] inserção de um novo veículo.
     - [x] edição de veículos.
+    - [x] exlusão de veículos.
 
 ---
 
