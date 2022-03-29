@@ -6,6 +6,7 @@ require_once './lib/Database/Connection.php';
 
 require_once './app/Controller/ErroController.php';
 require_once './app/Controller/HomeController.php';
+require_once './app/Controller/DetalhesController.php';
 
 require_once './app/Model/Veiculos.php';
 
