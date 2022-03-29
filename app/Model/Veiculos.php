@@ -63,7 +63,7 @@ class Veiculos{
         $res = $sql->execute();
 
         if($res == 0){
-            throw new Exception("Falha ao inserir veiculo");
+            throw new Exception("Falha ao inserir veículo");
 
             return false;
         }
@@ -88,7 +88,24 @@ class Veiculos{
         $res = $sql->execute();
 
         if($res == 0){
-            throw new Exception("Falha ao alterar veiculo");
+            throw new Exception("Falha ao alterar veículo");
+
+            return false;
+        }
+
+        return true;
+    }
+
+    public static function delete($id){
+        $con = Connection::getConn();
+        $sql = "DELETE FROM veiculos WHERE id = :id";
+        $sql = $con->prepare($sql);
+        $sql->bindValue(':id', $id);
+
+        $res = $sql->execute();
+
+        if($res == 0){
+            throw new Exception("Falha ao deletar veículo");
 
             return false;
         }

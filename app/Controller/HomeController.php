@@ -37,7 +37,7 @@ class HomeController{
         try{
             Veiculos::insert($_POST);
 
-            echo '<script>alert("Publicação inserida com sucesso!")</script>';
+            echo '<script>alert("Veículo inserido com sucesso!")</script>';
             echo '<script>location.href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=index"</script>';
         } catch(Exception $e){
             echo '<script>alert("'.$e->getMessage().'")</script>';
@@ -71,11 +71,25 @@ class HomeController{
             
             Veiculos::update($_POST);
 
-            echo '<script>alert("Publicação alterada com sucesso!")</script>';
+            echo '<script>alert("Veículo alterado com sucesso!")</script>';
             echo '<script>location.href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=index"</script>';
         } catch(Exception $e){
             echo '<script>alert("'.$e->getMessage().'")</script>';
             echo '<script>location.href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=change&id='.$_POST['id'].'"</script>';
+        }
+    }
+
+    public function delete($paramId){        
+        
+        
+        try{
+            
+            Veiculos::delete($paramId);
+
+            echo '<script>alert("Veículo deletado com sucesso!")</script>';
+            echo '<script>location.href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=index"</script>';
+        } catch(Exception $e){
+            echo '<script>alert("'.$e->getMessage().'")</script>';
         }
     }
 }
