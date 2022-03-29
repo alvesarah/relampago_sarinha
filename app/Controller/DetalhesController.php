@@ -11,8 +11,8 @@ class DetalhesController{
 
             $parametros = array();
             $parametros['nome'] = $detalhes->veiculo;
-            $parametros['marca'] = $detalhes->ano;
-            $parametros['ano'] = $detalhes->marca;
+            $parametros['marca'] = $detalhes->marca;
+            $parametros['ano'] = $detalhes->ano;
             $parametros['descricao'] = $detalhes->descricao;
             $parametros['vendido'] = $detalhes->vendido;
             $parametros['created'] = $detalhes->created;
