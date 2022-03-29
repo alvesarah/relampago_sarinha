@@ -44,4 +44,38 @@ class HomeController{
             echo '<script>location.href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=create"</script>';
         }
     }
+
+    public function change($paramId){
+        $loader = new \Twig\Loader\FilesystemLoader('app/View');
+        $twig = new \Twig\Environment($loader);
+        $template = $twig->load('update.html');
+        
+        $veic = Veiculos::selecionaPorId($paramId);
+
+        $parametros = array();
+        $parametros['id'] = $veic->id;
+        $parametros['veiculo'] = $veic->veiculo;
+        $parametros['marca'] = $veic->marca;
+        $parametros['ano'] = $veic->ano;
+        $parametros['descricao'] = $veic->descricao;
+        $parametros['vendido'] = $veic->vendido;
+        $parametros['created'] = $veic->created;
+
+        $conteudo = $template->render($parametros);
+        echo $conteudo;
+        
+    }
+
+    public function update(){
+        try{
+            
+            Veiculos::update($_POST);
+
+            echo '<script>alert("Publicação alterada com sucesso!")</script>';
+            echo '<script>location.href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=index"</script>';
+        } catch(Exception $e){
+            echo '<script>alert("'.$e->getMessage().'")</script>';
+            echo '<script>location.href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=change&id='.$_POST['id'].'"</script>';
+        }
+    }
 }
