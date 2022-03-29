@@ -50,11 +50,10 @@ class Veiculos{
             return false;
         }
 
-        var_dump($dadosPost);
-
         $con = Connection::getConn();
 
         $agora = date('Y-m-d H:i:s');
+        
         $sql = $con->prepare("INSERT INTO `veiculos` (`id`, `veiculo`, `marca`, `ano`, `descricao`, `vendido`, `created`, `updated`) VALUES (NULL, :veic, :marca, :ano, :descricao, :vendido, '$agora', NULL)");
         $sql->bindValue(':veic', $dadosPost['veiculo']);
         $sql->bindValue(':marca', $dadosPost['marca']);
@@ -65,6 +64,31 @@ class Veiculos{
 
         if($res == 0){
             throw new Exception("Falha ao inserir veiculo");
+
+            return false;
+        }
+
+        return true;
+    }
+
+    public static function update($params){
+        $con = Connection::getConn();
+
+        $agora = date('Y-m-d H:i:s');
+
+        $sql = "UPDATE veiculos SET veiculo = :veic, marca = :marca, ano = :ano, descricao = :descricao, vendido = :vendido, updated = '$agora' WHERE id = :id";
+        $sql = $con->prepare($sql);
+        $sql->bindValue(':veic', $params['veiculo']);
+        $sql->bindValue(':marca', $params['marca']);
+        $sql->bindValue(':ano', $params['ano']);
+        $sql->bindValue(':descricao', $params['descricao']);
+        $sql->bindValue(':vendido', $params['vendido']);
+        $sql->bindValue(':id', $params['id']);
+
+        $res = $sql->execute();
+
+        if($res == 0){
+            throw new Exception("Falha ao alterar veiculo");
 
             return false;
         }
