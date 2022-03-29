@@ -14,6 +14,8 @@ class DetalhesController{
             $parametros['marca'] = $detalhes->ano;
             $parametros['ano'] = $detalhes->marca;
             $parametros['descricao'] = $detalhes->descricao;
+            $parametros['vendido'] = $detalhes->vendido;
+            $parametros['created'] = $detalhes->created;
 
             $conteudo = $template->render($parametros);
             echo $conteudo;

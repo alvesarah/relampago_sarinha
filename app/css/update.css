@@ -20,7 +20,7 @@ form{
     margin: 20px;
 }
 
-.btn-inserir{
+.btn-alterar{
     color: var(--preto);
     font-family: var(--forum);
     background-color: var(--btn);
@@ -32,7 +32,7 @@ form{
     font-size: 18px;
 }
 
-.btn-inserir:hover{
+.btn-alterar:hover{
     color: white;
     background-color: var(--header);
     border: 1px solid var(--preto);
@@ -51,4 +51,5 @@ form{
     border-radius: 10px;
     border: none;
     margin-top: 10px;
+    text-align: center;
 }

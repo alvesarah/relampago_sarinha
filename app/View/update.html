@@ -1,24 +1,29 @@
+<head>
+    <link rel="stylesheet" href="app/css/reset.css">
+    <link rel="stylesheet" href="app/css/global.css">
+    <link rel="stylesheet" href="app/css/update.css">
+</head>
 <h1>Alterar veiculo</h1>
 <form method="post" action="?pagina=home&metodo=update">
     <span>nome do veiculo</span><br>
-    <input type="text" name="veiculo" value="{{veiculo}}" required><br><br>
+    <input class="input" type="text" name="veiculo" value="{{veiculo}}" required><br><br>
 
     <span>marca</span><br>
-    <input type="text" name="marca" value="{{marca}}" required><br><br>
+    <input class="input" type="text" name="marca" value="{{marca}}" required><br><br>
 
     <span>ano</span><br>
-    <input type="number" name="ano" value="{{ano}}" required><br><br>
+    <input class="input" type="number" name="ano" value="{{ano}}" required><br><br>
 
     <span>descricao</span><br>
-    <textarea name="descricao" cols="30" rows="10">{{descricao}}</textarea><br><br>
+    <textarea class="textarea" name="descricao" cols="30" rows="10">{{descricao}}</textarea><br><br>
 
     <span>vendido</span><br>
-    <select name="vendido">
+    <select class="select" name="vendido">
         <option value="1">Sim</option>
         <option value="0">Não</option>
     </select><br><br>
 
     <input type="hidden" name="id" value="{{id}}">
 
-    <input type="submit" value="Aterar">
+    <input class="btn-alterar" type="submit" value="Aterar">
 </form>

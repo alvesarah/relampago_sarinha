@@ -1,0 +1,20 @@
+main{
+    min-height: 68vh;
+    width: 100%;
+    font-family: var(--forum);
+}
+
+h1{
+    text-align: center;
+    margin: 30px;
+}
+
+.detalhes{
+    text-align: center;
+    margin: 30px;
+    font-size: 18px;
+}
+
+p{
+    margin: 10px;
+}
