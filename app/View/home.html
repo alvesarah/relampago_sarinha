@@ -1,11 +1,26 @@
-<main>
-    <!-- For com twig para mostrar as informações -->
-    <a href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=create">inserir</a>
+<head>
+    <link rel="stylesheet" href="app/css/reset.css">
+    <link rel="stylesheet" href="app/css/global.css">
+    <link rel="stylesheet" href="app/css/home.css">
+</head>
+<a class="btn-inserir" href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=create">Inserir um novo veículo</a>
+<!-- For com twig para mostrar as informações -->
+<article>
     {% for veiculo in veiculos %}
-        <h1>{{veiculo.veiculo}}</h1>
-        <p>{{veiculo.descricao}}</p>
-        <a href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=detalhes&id={{veiculo.id}}">detalhes</a>
-        <a href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=change&id={{veiculo.id}}">editar</a>
-        <a href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=delete&id={{veiculo.id}}">deletar</a>
-    {% endfor %}   
-</main>
+        <section class="veiculo">
+            <div class="img-descricao">
+                <i class="fa-solid fa-car-side carro"></i>
+                <div class="informacoes-veiculo">
+                    <h3>{{veiculo.veiculo}}</h3>
+                    <p>{{veiculo.marca}}</p> 
+                    <p>{{veiculo.ano}}</p> 
+                </div>
+            </div>
+            <div class="btn-crud">
+                <a href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=detalhes&id={{veiculo.id}}"><i class="fa-regular fa-eye crud"></i></a>
+                <a href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=change&id={{veiculo.id}}"><i class="fa-solid fa-pen-to-square crud"></i></a>
+                <a href="http://localhost/processo_seletivo/relampago_sarinha/?pagina=home&metodo=delete&id={{veiculo.id}}"><i class="fa-regular fa-trash-can crud"></i></a>
+            </div>
+        </section>
+    {% endfor %}
+</article>

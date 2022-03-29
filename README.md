@@ -30,7 +30,7 @@ Desenvolver uma <strong>API JSON RESTful</strong> em <strong>PHP</strong>, que u
 
 O layout da aplicação está disponível no Figma:
 
-<a href="">
+<a href="https://www.figma.com/file/HNTzyMRQ4igqO18K7dVxcW/Rel%C3%A2mpago-Sarinha?node-id=0%3A1">
   <img alt="Made by alvesarah" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
 </a>
 
@@ -101,7 +101,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### **Utilitários**
 
--   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Relâmpago Sarinha)]()**
+-   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Relâmpago Sarinha)](https://www.figma.com/file/HNTzyMRQ4igqO18K7dVxcW/Rel%C3%A2mpago-Sarinha?node-id=0%3A1)**
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
 -   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
 -   Teste de API:  **[Insomnia](https://insomnia.rest/)**

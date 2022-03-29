@@ -1,0 +1,53 @@
+main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--forum);
+    font-size: 18px;
+}
+
+h1{
+    margin: 20px;
+}
+
+form{
+    margin-top: 50px;
+    background-color: var(--cards);
+    padding: 20px 200px;
+    margin: 20px;
+}
+
+.btn-inserir{
+    color: var(--preto);
+    font-family: var(--forum);
+    background-color: var(--btn);
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 1s;
+    font-size: 18px;
+}
+
+.btn-inserir:hover{
+    color: white;
+    background-color: var(--header);
+    border: 1px solid var(--preto);
+}
+
+.input, .select{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+.textarea{
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}

@@ -1,0 +1,95 @@
+main{
+    width: 90%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.btn-inserir{
+    color: var(--preto);
+    font-family: var(--forum);
+    background-color: var(--btn);
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.btn-inserir:hover{
+    color: white;
+    background-color: var(--hover);
+    border: 1px solid var(--preto);
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.veiculo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cards);
+    height: 100px;
+    width: 100%;
+    margin: 20px;
+}
+
+.informacoes-veiculo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    font-family: var(--forum);
+}
+
+.carro{
+    display: none;
+}
+
+.btn-crud{
+    padding-right: 10px;
+    width: 20%;
+}
+
+.crud{
+    color: var(--header);
+}
+
+@media screen and (min-width: 500px){
+
+    main{
+        justify-content: space-around;
+        align-items:unset;
+    }
+
+    .veiculo{
+        padding: 20px;
+        width: 80%;
+    }
+
+    .img-descricao{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .carro{
+        display: block;
+        font-size: 50px;
+        color: var(--header);
+    }
+
+
+    .btn-crud{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
