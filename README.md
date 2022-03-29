@@ -37,16 +37,17 @@ O layout da aplicação está disponível no Figma:
 ### Mobile
 <!-- PRINT dO SITE NO CELULAR -->
 <p align="center"></p>
-  <img alt="" title="#" src="./src/assets/" width="200px">
-
-  <img alt="" title="#" src="./src/assets/" width="200px">
+  <img alt="" title="#" src="assets/mob-home.jpeg" width="200px">
+  <img alt="" title="#" src="assets/mob-inserir.jpeg" width="200px">
+  <img alt="" title="#" src="assets/mob-alterar.jpeg" width="200px">
+  <img alt="" title="#" src="assets/mob-detalhes.jpeg" width="200px">
 </p>
 
 ### Web
 <!-- PRINT dO SITE NO COMPUTADOR -->
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="" title="" src="assets/web-home.jpeg" width="400px">
   <img alt="" title="" src="assets/web-inserir.jpeg" width="400px">
+  <img alt="" title="" src="assets/web-home.jpeg" width="400px">
   <img alt="" title="" src="assets/web-alterar.jpeg" width="400px">
   <img alt="" title="" src="assets/web-detalhes.jpeg" width="400px">
 </p>
