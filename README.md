@@ -45,9 +45,10 @@ O layout da aplicação está disponível no Figma:
 ### Web
 <!-- PRINT dO SITE NO COMPUTADOR -->
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="" title="" src="./src/assets/" width="400px">
-
-  <img alt="" title="" src="./src/assets/" width="400px">
+  <img alt="" title="" src="assets/web-home.jpeg" width="400px">
+  <img alt="" title="" src="assets/web-inserir" width="400px">
+  <img alt="" title="" src="assets/web-alterar" width="400px">
+  <img alt="" title="" src="assets/web-detalhes" width="400px">
 </p>
 
 ---
