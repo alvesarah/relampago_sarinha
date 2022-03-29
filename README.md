@@ -36,7 +36,7 @@ O layout da aplicação está disponível no Figma:
 
 ### Mobile
 <!-- PRINT dO SITE NO CELULAR -->
-<p align="center"></p>
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="" title="#" src="assets/mob-home.jpeg" width="200px">
   <img alt="" title="#" src="assets/mob-inserir.jpeg" width="200px">
   <img alt="" title="#" src="assets/mob-alterar.jpeg" width="200px">
