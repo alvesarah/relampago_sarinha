@@ -19,7 +19,13 @@ class Core{
             $controller = 'ErroController';
         }
         
+        if(isset($urlGet['id']) && $urlGet['id'] != null){
+            $id = $urlGet['id'];
+        } else {
+            $id = null;
+        }
+
         // Exibir o conteudo da HomeController
-        call_user_func_array(array(new $controller, $acao), array());
+        call_user_func_array(array(new $controller, $acao), array('id' => $id));
     }
 }
