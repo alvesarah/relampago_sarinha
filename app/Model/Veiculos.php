@@ -1,6 +1,5 @@
 <?php
 
-// Conectar com o banco de dados e trazer os dados
 class Veiculos{
     public static function selecionarTodos(){
         $con = Connection::getConn();
@@ -20,6 +19,23 @@ class Veiculos{
         }
 
         // Se não encontrar nenhum registro
+        if(!$resultado){
+            throw new Exception("Não foi encontrado nenhum registro no banco");
+        }
+
+        return $resultado;
+    }
+
+    public static function selecionaPorId($id){
+        $con = Connection::getConn();
+
+        $sql = "SELECT * FROM veiculos WHERE id = :id";
+        $sql = $con->prepare($sql);
+        $sql->bindValue(':id', $id, PDO::PARAM_INT);
+        $sql->execute();
+
+        $resultado = $sql->fetchObject('Veiculos');
+
         if(!$resultado){
             throw new Exception("Não foi encontrado nenhum registro no banco");
         }
