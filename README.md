@@ -131,6 +131,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Este projeto esta sobe a licença [MIT](./LICENSE).
 
-Feito com ❤️ por Sarah Alves 👋🏽 <br> [Entre em contato! Sarah](https://github.com/alvesarah)
+Feito com ❤️ por Sarah Alves 👋🏽 <br> [Entre em contato!](https://github.com/alvesarah)
 
 ---
