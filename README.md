@@ -64,7 +64,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 * [Composer](https://www.hostinger.com.br/tutoriais/como-instalar-e-usar-o-composer/)
 * [Twig](https://packagist.org/packages/twig/twig)
 
-#### 🧭 Rodando a aplicação web (Frontend)
+#### 🧭 Rodando a aplicação web
 
 ```bash
 
@@ -85,5 +85,52 @@ $ ./create-and-populate.php
 ```
 
 ---
-# relampago_sarinha
-API Rest em PHP que consiste em fazer buscas, inserções, deleções e alterações com formato MVC.
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### **Website**
+
+-   HTML5
+-   CSS3
+-   **[PHP](https://www.php.net/)**
+-   **[JavaScript](https://www.javascript.com/)**
+
+
+#### **Utilitários**
+
+-   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Hades | Barber Lounge)](https://www.figma.com/file/D41nbP0LDvkQfpi2z7JcjL/Hades-%7C-Barber-Lounge?node-id=1%3A2)**
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+-   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
+-   Teste de API:  **[Insomnia](https://insomnia.rest/)**
+-   Ícones:  **[Feather Icons](https://feathericons.com/)**,  **[Font Awesome](https://fontawesome.com/)**
+
+---
+
+## 🦸 Autores
+<table>
+<tr>
+<td>
+<a href="https://github.com/alvesarah">
+    <img style="border-radius: 50%;" src="./src/assets/foto-sarah.jpg" width="100px;" alt="">
+    <br>
+    <sub><b>Sarah Alves</b></sub>
+</a>
+<a href="https://github.com/alvesarah">🦄</a>
+<br>
+
+[![Linkedin Badge](https://img.shields.io/badge/-Sarah-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/sarahalvesoliveira/)](https://www.linkedin.com/in/sarahalvesoliveira/) 
+[![Gmail Badge](https://img.shields.io/badge/-salves726@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:salves726@gmail.com)](mailto:salves726@gmail.com)
+
+</td>
+</table>
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Sarah Alves 👋🏽 <br> [Entre em contato! Sarah](https://github.com/alvesarah)
+
+---
