@@ -42,4 +42,33 @@ class Veiculos{
 
         return $resultado;
     }
+
+    public static function insert($dadosPost){
+        if(empty($dadosPost['veiculo']) || empty($dadosPost['marca']) || empty($dadosPost['ano'])){
+            throw new Exception("Preencha todos os campos");
+
+            return false;
+        }
+
+        var_dump($dadosPost);
+
+        $con = Connection::getConn();
+
+        $agora = date('Y-m-d H:i:s');
+        $sql = $con->prepare("INSERT INTO `veiculos` (`id`, `veiculo`, `marca`, `ano`, `descricao`, `vendido`, `created`, `updated`) VALUES (NULL, :veic, :marca, :ano, :descricao, :vendido, '$agora', NULL)");
+        $sql->bindValue(':veic', $dadosPost['veiculo']);
+        $sql->bindValue(':marca', $dadosPost['marca']);
+        $sql->bindValue(':ano', $dadosPost['ano']);
+        $sql->bindValue(':descricao', $dadosPost['descricao']);
+        $sql->bindValue(':vendido', $dadosPost['vendido']);
+        $res = $sql->execute();
+
+        if($res == 0){
+            throw new Exception("Falha ao inserir veiculo");
+
+            return false;
+        }
+
+        return true;
+    }
 }

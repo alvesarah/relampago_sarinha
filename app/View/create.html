@@ -1,0 +1,23 @@
+<h1>Inserir veiculo</h1>
+<form method="post" action="?pagina=home&metodo=insert">
+    <span>nome do veiculo</span><br>
+    <input type="text" name="veiculo" required><br><br>
+
+    <span>marca</span><br>
+    <input type="text" name="marca" required><br><br>
+
+    <span>ano</span><br>
+    <input type="number" name="ano" required><br><br>
+
+    <span>descricao</span><br>
+    <textarea name="descricao" cols="30" rows="10"></textarea><br><br>
+
+    <span>vendido</span><br>
+    <select name="vendido">
+        <option value=""></option>
+        <option value="1">Sim</option>
+        <option value="0">Não</option>
+    </select><br><br>
+
+    <input type="submit" value="inserir">
+</form>
